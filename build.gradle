@@ -33,7 +33,7 @@ dependencies {
 // PLEASE NOTE: git update-index --chmod=+x gradlew
 sonarqube {
     properties {
-        property "sonar.projectKey", "Suhejl_SpringBootGradle"
+        property "sonar.projectKey", "Suhejl_SpringBootWithUnitTest"
     }
 }
 
