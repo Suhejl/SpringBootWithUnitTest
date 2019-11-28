@@ -1,4 +1,4 @@
-package ch.noseryoung.plj.primetime.primary;
+package ch.noseryoung.plj.primetime.prime;
 
 import java.util.List;
 

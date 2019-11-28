@@ -1,4 +1,4 @@
-package ch.noseryoung.plj.primetime.primary;
+package ch.noseryoung.plj.primetime.prime;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -27,17 +27,12 @@ public class PrimeController {
   }
 
   @GetMapping("/{number}")
-  public ResponseEntity<String> isPrime(@PathVariable Integer number) {
-    String message = "";
-    if (primeService.isPrime(number)) {
-      message = number + " is a prime number";
-    } else message = number + " is not a prime number";
-
-    return new ResponseEntity<>(message, HttpStatus.OK);
+  public ResponseEntity<Boolean> isPrime(@PathVariable Integer number) {
+    return new ResponseEntity<>(primeService.isPrime(number), HttpStatus.OK);
   }
 
-  @GetMapping("/getPrimes")
-  public ResponseEntity<List<Integer>> getPrimes(@PathParam("maxNumber") Integer maxNumber) {
+  @GetMapping("/getPrimes/{maxNumber}")
+  public ResponseEntity<List<Integer>> getPrimes(@PathVariable Integer maxNumber) {
     return new ResponseEntity<>(primeService.getPrimes(maxNumber), HttpStatus.OK);
   }
 

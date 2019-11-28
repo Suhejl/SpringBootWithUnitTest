@@ -1,4 +1,4 @@
-package ch.noseryoung.plj.primetime.primary;
+package ch.noseryoung.plj.primetime.prime;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
@@ -8,10 +8,7 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.ArrayList;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @RunWith(SpringRunner.class)
 class PrimeServiceImplTest {

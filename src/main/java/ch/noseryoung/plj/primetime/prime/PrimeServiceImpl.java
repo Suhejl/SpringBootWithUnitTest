@@ -1,11 +1,9 @@
-package ch.noseryoung.plj.primetime.primary;
+package ch.noseryoung.plj.primetime.prime;
 
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 @Service
 public class PrimeServiceImpl implements PrimeService {
